@@ -16,7 +16,9 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(cors({
-    origin:['http://localhost:3000'],
+    origin:['http://localhost:3000',
+        'https://blood-bank-frontend-umg6.onrender.com',
+    ],
     methods:['GET', 'POST','PUT','DELETE'],
     credentials:true
 }));
