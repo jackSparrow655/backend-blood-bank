@@ -28,6 +28,12 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 //port
 const PORT = process.env.PORT || 8080;
 
+app.get('/', (req, res) => {
+    return res.status(200).json({
+        message:"hii I am arijit"
+    })
+})
+
 //listen
 app.listen(PORT, () => {
   console.log(
