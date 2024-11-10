@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     origin:['http://localhost:3000',
-        'https://blood-bank-frontend-umg6.onrender.com',
+        'https://client-pied-zeta.vercel.app',
     ],
     methods:['GET', 'POST','PUT','DELETE'],
     credentials:true
